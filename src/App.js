@@ -1,25 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import AppAppBar from "./components/AppAppBar";
+import Dashboard from "./pages/Dashboard";
+import Error from "./pages/Error";
+import Exercises from "./pages/Exercises";
+import Index from "./pages/Home";
+import User from "./pages/user";
+import withRoot from "./components/withRoot";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Router>
+        <AppAppBar />
+        <Switch>
+          <Route exact path="/" component={Index}></Route>
+          <Route exact path="/user" component={User}></Route>
+          <Route exact path="/dashboard" component={Dashboard}></Route>
+          <Route exact path="/exercise" component={Exercises}></Route>
+          <Route exact path="*" component={Error}></Route>
+        </Switch>
+      </Router>
+    </>
   );
 }
-
-export default App;
+export default withRoot(App);
