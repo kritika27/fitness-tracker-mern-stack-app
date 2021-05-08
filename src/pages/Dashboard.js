@@ -135,7 +135,9 @@ function Dashboard() {
                     <StyledTableCell align="right">
                       {row.duration}
                     </StyledTableCell>
-                    <StyledTableCell align="right">{row.date}</StyledTableCell>
+                    <StyledTableCell align="right">
+                      {row.date.substring(0, 10)}
+                    </StyledTableCell>
                     <StyledTableCell align="right">
                       <Button
                         color="secondary"
