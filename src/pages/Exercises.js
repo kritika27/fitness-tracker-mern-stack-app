@@ -19,7 +19,7 @@ export default function Exercises() {
 
   React.useEffect(() => {
     axios
-      .get("http://localhost:5000/users/")
+      .get("https://fitness-tracker-mern.herokuapp.com/users")
       .then((response) => {
         if (response.data.length > 0) {
           setUsers(response.data.map((user) => user.username));
@@ -58,10 +58,16 @@ export default function Exercises() {
     };
 
     axios
-      .post("http://localhost:5000/exercises/add/", exercise)
+      .post(
+        "https://fitness-tracker-mern.herokuapp.com/exercises/add/",
+        exercise
+      )
       .then((res) => console.log(res.data));
 
-    window.location = "/";
+    setUsername("");
+    setDescription("");
+    setDuration("");
+    setDate("");
   };
   function Copyright() {
     return (
