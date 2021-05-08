@@ -2,14 +2,16 @@
 
 ## Description
 
-This is a Fitness Tracker built using MERN stack.It facilitates one to add users and record their date and duration of performing particular fitness activity.Activity can also be deleted.This web application is built using MongoDB,Express,Nodejs,React and Material UI.Images used in this application are being taken from unsplash.com.
+This is a Fitness Tracker built using MERN stack. It facilitates one to add users and record their date and duration of performing particular fitness activity.Activity can also be deleted. This web application is built using MongoDB,Express,Nodejs,React and Material UI. Images used in this application are being taken from [Unsplash website](https://unsplash.com).
 
 ## Demo
 
 👉 [Link](https://serene-volhard-1843cb.netlify.app/)
 
 Backend Heroku Link-https://fitness-tracker-mern.herokuapp.com/
+
 [Users](https://fitness-tracker-mern.herokuapp.com/users)
+
 [Exercises](https://fitness-tracker-mern.herokuapp.com/exercises)
 
 ## Screenshots
@@ -23,7 +25,7 @@ Create user
 Record Fitness Activity
 ![fitkit_exercise](https://user-images.githubusercontent.com/4997491/117525061-3d3de880-afde-11eb-9201-acdb5b804f40.JPG)
 
-Exercise List
+Fitness Activity Dashboard
 ![fitkit_dashboard](https://user-images.githubusercontent.com/4997491/117525087-652d4c00-afde-11eb-92d4-0fda6f5c5d03.JPG)
 
 404 Error page
